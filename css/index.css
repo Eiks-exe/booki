@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,400&display=swap');
+
+
+body {
+    min-height: 100vh;
+    font-family: 'Raleway', sans-serif;
+    padding-left: 50px;
+    padding-right: 35px;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+    padding: 0;       
+}
+.nav > img {
+    width: 100px;
+}
+
+.navlinks > a {
+    width: 500px;
+    margin: 0;
+    padding: 26px;
+    text-decoration: none;
+    font-size: x-large;
+    font-style: bold;
+    color: black;
+}
+
+
+.navlinks > a:visited {
+    color: initial;
+}
+
+.navlinks > a:focus {
+    border-top: 4px solid #0065FC;
+    color:#0065FC;
+}
+
+.search-form{
+display: flex;
+    
+    align-items: center;
+}
+
+.input-search{
+    height: 45px;
+    width: 200px;
+    margin: 0;
+    padding: 0;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border: 1px solid #F2F2F2;
+    border-right: none;
+    font-weight: 700;
+    font-size: 24px;
+    outline: none;
+}
+
+.searchbutton{
+    margin: 0;
+    padding:0;
+    height: 47px;
+    width: 125px;
+    background-color: #0065FC;
+    color: white;
+    border: none;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    font-style: bold;
+    font-weight: 400;
+    font-size:large;
+}
+
+.searchbutton:active{
+    background-color: #003686;
+}
+
+.filter{
+    width:700px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 700;
+    margin-top: 25px;
+}
+
+.filter-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+.filter-link > a{
+    height: 50px;
+    width:fit-content;
+    max-width: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 10px;
+    border:2px solid #F2F2F2;
+    border-left: none;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    text-decoration: none;
+    color:black
+}
+
+.filter-link > i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+    width: 45px;
+    padding: 5px;
+    border-radius: 50px;
+    text-align: center;
+    color: #0065FC;
+    background-color: #DEEBFF;
+    position: relative;
+    left: 20px;
+    font-size: 20px;
+}
+
+#hebergements{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.hgm {
+    height:800px;
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F2F2F2;
+    margin: 0px;
+    margin-right: 50px;
+    padding: 0px;
+    border-radius: 25px;
+}
+
+.popular {
+    height:800px;
+    display:flex;
+    flex-direction: column;
+    background-color: #F2F2F2;
+    width: 500px;
+    margin: 0px;
+    border-radius: 25px;
+}
+
+.card {
+    height: 200px;
+    width: 250px;
+    margin: 20px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    border: 1px solid #F2F2F2;
+    border-radius: 15px;
+    box-shadow: 1px 1px 20px 5px grey;
+}
+.card > img {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    height: 130px;
+    width: 250px;
+}
+
+.card-content{
+    height: 60px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    justify-self: flex-start;
+    padding: 2px;
+}
+
+.card-content > .stars:nth-child(-n+3) {
+    color:#003686;
+}
+.popular > .card {
+    flex-direction: row;
+    height: 170px;
+    width: 350px;
+}
+
+.popular > .card > img{
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-top-right-radius: 0;
+    height: 170px;
+    width: 350px;
+}
+
+
+
+.gridrow{
+    display:flex;
+    flex-direction: row;
+}
