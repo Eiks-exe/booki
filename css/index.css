@@ -4,10 +4,32 @@
 body {
     min-height: 100vh;
     font-family: 'Raleway', sans-serif;
-    padding-left: 50px;
-    padding-right: 35px;
+    
 }
 
+section{
+    margin-left: 60px;
+}
+
+.footer{
+    width: 100vw;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    background: #F2F2F2;
+    margin-top: 50px;
+}
+
+.footer > ul > .title{
+    font-weight: 700;
+}
+.footer > ul {
+    list-style: none;
+    font-size: 16px;
+    margin-top: 10px
+}
 .nav {
     display: flex;
     flex-direction: row;
@@ -165,54 +187,49 @@ body {
     align-items: center;
 }
 
-.hgm {
-    height: 800px;
-    width: 1200px;
+.hgm , .popular{
+    background-color: #F2F2F2;
+    height: 670px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    background-color: #F2F2F2;
-    margin: 0px;
-    margin-right: 50px;
-    padding: 0px;
     border-radius: 25px;
+     
 }
 
-.hgm>h2 {
-    transform: translateX(-310px);
-    font-weight: 700;
+.hgm {
+   margin-right: 50px;
+   width: 1200px;
 }
 
 .popular {
-    height: 800px;
-    display: flex;
-    flex-direction: column;
-    background-color: #F2F2F2;
-    width: 500px;
-    margin: 0px;
-    border-radius: 25px;
+    width: 400px;
+    padding-left: 20px;
+    padding-right: 20px
 }
 
+
+
 .card {
-    height: 200px;
-    width: 250px;
+    height: 220px;
+    width: 300px;
     margin: 20px;
-    padding: 5px;
+    padding: 4px;
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: center;
+    background-color: white;
     border: 1px solid #F2F2F2;
-    border-radius: 15px;
-    box-shadow: 1px 1px 20px 5px grey;
+    border-radius: 20px;
+    box-shadow: 2px 2px 20px 2px rgb(194, 194, 194);
 }
 
 .card>img {
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     height: 130px;
-    width: 250px;
+    width: 300px;
 }
 
 .card-content {
@@ -228,9 +245,10 @@ body {
 .card-content>.stars {
     color: #0065FC;
 }
-.popular> a {
 
+.popular> a {
     text-decoration: none;
+    color:black;
 }
 
 .popular> a:visited {
@@ -238,7 +256,7 @@ body {
 }
 .popular> a> .card {
     flex-direction: row;
-    height: 150px;
+    height: 120px;
     width: 350px;
 }
 
@@ -246,13 +264,13 @@ body {
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
     border-top-right-radius: 0;
-    height: 150px;
+    height: 120px;
     width: 150px;
     margin-right: 20px
 }
 
 .popular> a >.card>.card-content {
-    height: 143px;
+    height: 120px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -263,6 +281,9 @@ body {
 .gridrow {
     display: flex;
     flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 30px;
 }
 
 .gridrow>a {
@@ -271,4 +292,61 @@ body {
 
 .gridrow>a:visited {
     color: inherit;
+}
+
+#activities{
+    display: flex;
+}
+
+.CardContainer{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.CardContainer > .card:first-child{
+    height: 500px;
+    width: 350px;
+    display: flex;
+    align-items: center;
+    margin:0px;
+    padding: 0;
+    margin-right: 50px;
+}
+
+.CardContainer > .card:first-child > img{
+    height: 450px;
+    width: 350px;
+}
+
+.gridCol{
+    height: 500px;
+    margin-right: 50px ;
+    padding: 0px;
+}
+.gridCol > .card{
+   margin: 0;
+   padding: 0;
+}
+
+.gridCol > .card:first-child{
+    height: 250px;
+    margin-bottom: 50px;
+}
+
+.gridCol > .card:first-child > img{
+    height: 200px;
+}
+
+.gridCol > .card:nth-child(2n){
+    height: 198px;
+}
+
+.gridCol > .card:nth-child(2n) > img{
+    height: 150px;
+}
+
+ul > li {
+    margin-bottom: 15px;
 }
