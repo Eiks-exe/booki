@@ -11,6 +11,7 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-end;
+    margin: 0 50px;
 }
 
 #top > sub{
@@ -48,8 +49,7 @@ header {
 
 main
 {
-    width: 1710px;
-    margin: auto;
+    margin: 0 50px;
 }
 
 
@@ -130,6 +130,7 @@ main
     justify-content: center;
     align-items: center;
     text-decoration: none;
+    color: black;
 }
 
 .filter-link > a:visited{
@@ -178,26 +179,27 @@ main
 
 /*---------------------------------------------------------------*/
 
+.card , .card > img {
+    width: 100%;
+}
+
 .card {
-    height: 220px;
-    width: 300px;
+    height: 90%;
     margin: 20px;
     padding: 4px;
     display: flex;
     flex-direction: column;
-    justify-content: start;
-    align-items: center;
+    justify-content: space-between;
+    align-items: flex-start;
     background-color: white;
-    border: 1px solid #F2F2F2;
-    border-radius: 20px;
+    border-radius: 25px;
     box-shadow: 2px 2px 20px 2px rgb(194, 194, 194);
 }
 
 .card>img {
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    height: 130px;
-    width: 300px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    height: 70%;
 }
 
 .card-content {
@@ -208,6 +210,7 @@ main
     justify-content: space-between;
     justify-self: flex-start;
     padding: 2px;
+    margin-bottom: 10px ;
 }
 
 .card-content >.stars {
@@ -225,20 +228,20 @@ main
 .popular> a:visited {
     color: inherit;
 }
-.popular> a> .card {
+.popular> .card {
     flex-direction: row;
-    height: 150px;
-    width: 390px;
+    height: 250px;
+    width: 85%;
 }
 
 /*TODO replace img with divs(with "img" classname) then add them a background poperty*/
 
-.popular> a >.card>img {
+.popular> .card>img {
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
     border-top-right-radius: 0;
-    height: 150px;
-    width: 160px;
+    height: 100%;
+    width: 40%;
     margin-right: 20px
 }
 
@@ -268,12 +271,15 @@ main
 /*-----------------------------------------------------------------*/
 
 #hebergements {
+    height:100vh;
+    width:auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
 .hgm, .popular{
+    height: 100%;
     background-color: #F2F2F2;
     border-radius: 25px;
     display: flex;
@@ -283,23 +289,27 @@ main
     width: 65%;
     justify-self: start;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 
 .popular {
     width: 30%;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
 .gridrow{
     display: flex;
+    justify-content: space-between;
+    height: 30%;
+    width: 100%;
 }
 
 .gridrow>a {
     text-decoration: none;
+    color: black
 }
 
 .gridrow>a:visited {
@@ -312,10 +322,10 @@ main
     margin: 0px;
 }
 
-.gridrow > a:first-child > .card > .card-content > .stars > .fa-star:last-child, .gridrow:nth-child(2) > a:last-child > .card > .card-content > .stars > .fa-star:last-child{
+.gridrow > .card:first-child > .card-content > .stars > .fa-star:last-child, .gridrow:nth-child(2) > .card:last-child > .card-content > .stars > .fa-star:last-child{
     color: #dfdfdf;
 }
-.gridrow:nth-child(3) > a:first-child > .card > .card-content > .stars > .fa-star:nth-child(4), .gridrow:nth-child(3) > a:nth-child(2) > .card > .card-content > .stars > .fa-star:last-child{
+.gridrow:nth-child(3) >  .card:first-child > .card-content > .stars > .fa-star:nth-child(4), .gridrow:nth-child(3) > a:nth-child(2) > .card > .card-content > .stars > .fa-star:last-child{
     color:#dfdfdf
 }
 
@@ -440,7 +450,6 @@ footer{
 
 .price {
     font-weight: 900;
-    font-style: bold;
 }
 .footer_links{
     text-decoration: none;
@@ -449,4 +458,13 @@ footer{
 
 .footer_links:visited{
     color:inherit;
+}
+
+.activitiesContainer > .CardContainer > .card, .gridCol > .card {
+    justify-content:start;
+}
+
+.activitiesContainer > .CardContainer > .card > h3 {
+    margin-top: 10px;
+    margin-left: 10px;
 }
