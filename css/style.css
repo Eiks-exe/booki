@@ -288,14 +288,18 @@ footer {
 
 .footer {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    align-items: flex-start;
     justify-self: start;
+    gap: 200px;
+    width: 100%;
 }
 
 .footer > ul {
     list-style: none;
-    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 24px;
 }
 
 .footer-title{
@@ -336,6 +340,9 @@ footer {
     }
     .nav-links:last-child {
         width: 40%;
+    }
+    .footer{
+        gap: 10px;
     }
 }
 
@@ -427,3 +434,4 @@ footer {
         transform: rotate(360deg);
     }
 }
+
