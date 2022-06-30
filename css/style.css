@@ -31,7 +31,7 @@ nav{
     height: 100%;
     text-decoration: none;
     color: black;
-    font-size: 32px;
+    font-size: 24px;
     font-weight: 500;
     padding: 50px 50px 0 50px;
 }
@@ -63,11 +63,19 @@ nav{
 }
 
 .hbg-title {
-    left: 25px;
+    left: 60px;
+    top: -70px;
     width: 80%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.hbg-title-2{
+    position: relative;
+    font-size: 24px;
+    font-weight: 900;
+    top: 80px;
 }
 
 .pop-title {
@@ -85,7 +93,7 @@ nav{
 }
 
 .Hébergements, .Popular {
-    background-color: #d8d8d8;
+    background-color: #F2F2F2;
     border-radius: 25px;
     display: flex;
     flex-direction: column;
@@ -109,7 +117,8 @@ nav{
     flex-wrap: wrap;
     height: fit-content;
     width: fit-content;
-    column-gap: 20px;
+    column-gap: 30px;
+    row-gap: 30px;
     min-width: 500px;
 }
 
@@ -124,9 +133,9 @@ nav{
     text-decoration: none;
     color: black;
     min-height: 220px;
-    min-width: 300px;
+    min-width: 270px;
     max-height: 250px;
-    width: 30%;
+    width: 27%;
     margin-bottom: 30px;
     display: flex;
     flex-direction: column;
@@ -280,7 +289,7 @@ nav{
 /*---------------------------------------------------------------------------*/
 
 footer {
-    background-color: #b0b0b0;
+    background-color: #F2F2F2;
     display: flex;
     width: 100%;
     padding: 50px 0px;
